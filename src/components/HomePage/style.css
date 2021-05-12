@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+#container{
+    height: calc(100vh - 70px);
+    overflow-x: scroll;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    background: #F3E8EE;
+    position: absolute;
+}
+*::-webkit-scrollbar {
+        width: 0.675rem;
+        height:0.675rem;
+        
+    }
+      
+*::-webkit-scrollbar-track {
+        background: transparent;}
+      
+*::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 0.5rem; 
+}
+
+.title-box {
+    width: 900px;
+    height: 80px;
+}
+
+.title-box p {
+    padding-top: 25px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #2E2C2F;
+}
+
+.box-homepage {
+    width: 900px;
+    height: 500px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    justify-content: space-around;
+
+    background-color: snow;
+    
+
+    border: 1.8px solid rgb(214, 214, 214);
+    border-radius: 15px;
+    
+    box-shadow:black 0px 1px 2px;
+    align-items: center;
+}
+
+.box-alert {
+    width: 900px;
+    height: 500px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: snow;
+    
+
+    border: 1.8px solid rgb(214, 214, 214);
+    border-radius: 15px;
+    
+    box-shadow:black 0px 1px 2px;
+    
+}
+
+.box-alert #alert-box {
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.356);
+    font-size: 30px;
+    border: 1px dashed rgba(0, 0, 0, 0.356);
+}
+
+#button-cadastrar {
+    margin-top: 30px;
+    border: 1px dashed rgba(0, 0, 0, 0.356);
+    padding: 10px;
+}
+
+#button-cadastrar a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.822) ;
+}

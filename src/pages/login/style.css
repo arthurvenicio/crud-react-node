@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+#container-login {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3E8EE;
+}
+
+.box-login {
+    width: 350px;
+    height: 350px;
+
+    border-bottom: 5px solid green;
+    background: white;
+    color: black; 
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+   width: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: 50px;
+}
+
+.forms-input {
+    margin-top: 30px;
+}
+
+.forms-input p {
+    font-family: Roboto , sans-serif;
+    font-weight: 400;
+}
+
+.forms-input input {
+    width: 220px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid green;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.input-pswwd {
+    margin-top: 15px;
+}
+
+.button-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.button-login button {
+    width: 80px;
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+
+    background-color: green;
+    color: white;
+}
+
+.button-login button:hover{
+    cursor: pointer;
+}
+
+#content-alt{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#content-alt a{
+    color: black;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
