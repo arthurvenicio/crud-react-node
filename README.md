@@ -7,9 +7,8 @@ Esse foi um CRUD desenvolvido com React JS no front e Node Js com Express para o
 ## Tecnologies e Requerimentos para a nossa aplicação - FRONT-END!
 
 - [ReactJS](https://reactjs.org/)
-- [NodeJS](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
-- [Firestore](https://firebase.google.com/?hl=pt-br)
+- [JavaScript](https://www.javascript.com/)
+
 
 ## Libs:
   - [react-router-dom](https://reactrouter.com/web/guides/quick-start)
