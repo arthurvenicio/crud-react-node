@@ -57,7 +57,7 @@
     width: 60px;
 
     border: none;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 10px 5px;
 
     background-color: green;
@@ -73,14 +73,14 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .button-delete button {
     width: 60px;
 
     border: none;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 10px 5px;
 
     background-color: red;

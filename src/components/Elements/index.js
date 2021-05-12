@@ -23,7 +23,7 @@ const Elements = ({name, quantity, description, price, img, id, index}) => {
 
             <div className="props">
                 <p>{description}</p>
-                <p>R$ {price},00</p>
+                <p>R$ {price}</p>
                 <p>Quantidade em estoque: {quantity}</p>
             </div>
 

@@ -3,7 +3,7 @@
 }
 
 .search-box{
-    width:500px;
+    width:600px;
     height: 35px;
     
     padding: 4px 1px;
@@ -18,7 +18,7 @@
 }
 
 .search-box  input{
-    width:450px;
+    width:560px;
     
     margin-right: 8px;
     margin-left: auto;

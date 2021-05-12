@@ -68,3 +68,21 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+#button-header-cadastrar {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #88cf89;
+
+    border-radius: 15px;
+    margin-left: auto;
+    margin-top: 20px;
+    
+}
+#button-header-cadastrar a{
+    text-decoration: none;
+    color: black;
+}

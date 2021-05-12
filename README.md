@@ -2,9 +2,9 @@
 ---
 
 # O Projeto
-Esse foi um CRUD desenvolvido com React JS no front e Node Js com Express para o back-end, desenvolvido como um teste para o estagio da [alest](https://alest.com.br/) !. Como não foi deixado explicito o ramo da empresa em simulação, apenas busquei uma no google e trabalhei em cima dela!
+Esse foi um CRUD desenvolvido com React JS no front e Node Js com Express para o back-end, desenvolvido como um teste para o estagio da [alest](https://alest.com.br/)! . Como não foi deixado explicito o ramo da empresa em simulação, apenas busquei uma no google e trabalhei em cima dela!
 
-## Tecnologies e Requerimentos para a nossa aplicação
+## Tecnologies e Requerimentos para a nossa aplicação - FRONT-END!
 
 - [ReactJS](https://reactjs.org/)
 - [NodeJS](https://nodejs.org/en/)
@@ -12,6 +12,7 @@ Esse foi um CRUD desenvolvido com React JS no front e Node Js com Express para o
 - [Firestore](https://firebase.google.com/?hl=pt-br)
 
 ## Libs:
+  - [react-router-dom](https://reactrouter.com/web/guides/quick-start)
   - [react-icons](https://react-icons.github.io/react-icons/)
 
 ## Aquecendo os Motores
@@ -29,4 +30,10 @@ Esse foi um CRUD desenvolvido com React JS no front e Node Js com Express para o
   - Inicie o servidor com `yarn dev`.
   - Agora você já pode acessar a nossa aplicação em [`http://localhost:3000`](http://localhost:3000)
 
+## Observação !
+- Faltam corrigir alguns pontos em relação as rotas.
+- Falta adicionar a responsividade para aparelhos mobile.
+- Há as paginas de login e cadastro porém não estão funcionando ainda! 
+
+- Link para o repositorio [BACK-END](https://github.com/arthurvenicio/crud-react-node-back)
 

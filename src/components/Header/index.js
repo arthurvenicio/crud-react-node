@@ -15,7 +15,12 @@ const Header = () => {
             <div className="search-p"> 
                 <SearchBar />
             </div>
+
+            <div id="button-header-cadastrar">
+            <a href="/create" >Cadastrar Produto</a>
+            </div>
         
+
             <div className="user-Info">
                 <div className="userLog">
                     <p>Administrador</p>
