@@ -26,7 +26,7 @@ Esse foi um CRUD desenvolvido com React JS no front e Node Js com Express para o
 - Abre o terminal na pasta e:
   - Para checar e instalar dependências utilize o comando : `yarn`
   - Atenção é necessário que o back-end já esteja rodando, para iniciar o servidor local 
-  - Inicie o servidor com `yarn dev`.
+  - Inicie o servidor com `yarn start`.
   - Agora você já pode acessar a nossa aplicação em [`http://localhost:3000`](http://localhost:3000)
 
 ## Observação !
