@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../components/Header';
 import { api } from '../../services/api';
-//import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 
 import './style.css';
@@ -17,7 +17,7 @@ const initValue = {
 const Create =  () => {
 
     const [values, setValues] = useState(initValue);
-    //const history = useHistory();
+    const history = useHistory();
 
 
     function onChange(ev) {
@@ -29,11 +29,13 @@ const Create =  () => {
     }
 
     function onSubmit(ev){
+    ev.preventDefault();
     api.post('product', values)
       .then((response) => alert(response.data))
       .catch(function (error) {
         console.error(error);
       });
+    history.push('/');
 }
     return(
 
@@ -45,11 +47,11 @@ const Create =  () => {
                     <div className="forms-details">
                         <div className="input-name">
                             <p>Nome do Produto</p>
-                            <input id="name" type="text" placeholder="Insira o nome do produto" name='name' onChange={onChange} maxlength="15" required></input>
+                            <input id="name" type="text" placeholder="Insira o nome do produto" name='name' onChange={onChange} maxlength="25" required></input>
                         </div>
                         <div className="input-name">
                             <p>Detalhes</p>
-                            <input id="description" type="text" placeholder="Insira os detalhes do produto" name='description' onChange={onChange} maxlength="20" required></input> 
+                            <input id="description" type="text" placeholder="Insira os detalhes do produto" name='description' onChange={onChange} maxlength="40" required></input> 
                         </div>
                         <div className="input-name">
                             <p>Preço</p>

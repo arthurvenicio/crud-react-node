@@ -31,19 +31,21 @@ const Update =  () => {
             setValues(newDate);
         }
     
-    function onUpdate(){
+    function onUpdate(ev){
+        ev.preventDefault();
         api.put(`product/${id}`, values).then((response, event) =>  {
-            event.preventDefault();
-
             alert(response.data);
-            history.push('/');
         })
           .catch(function (error) { console.error(error);});
+        history.push('/');
         }
+        
 
-    function onDelete(){
+    function onDelete(ev){
+        ev.preventDefault();
         api.delete(`product/${id}`).then((response) => alert(response.data) )
         .catch((error) => console.error);
+        history.push('/');
     }
 
     if (!data) return null;
@@ -57,11 +59,11 @@ const Update =  () => {
                     <div className="forms-details">
                         <div className="input-name">
                             <p>Nome do Produto</p>
-                            <input id="name" type="text" placeholder={data.name}  name='name' onChange={onChange} maxlength="15" ></input>
+                            <input id="name" type="text" placeholder={data.name}  name='name' onChange={onChange} maxlength="25" ></input>
                         </div>
                         <div className="input-name">
                             <p>Detalhes</p>
-                            <input id="description" type="text" placeholder={data.description} name='description' onChange={onChange} maxlength="20"  ></input> 
+                            <input id="description" type="text" placeholder={data.description} name='description' onChange={onChange} maxlength="40"  ></input> 
                         </div>
                         <div className="input-name">
                             <p>Preço</p>

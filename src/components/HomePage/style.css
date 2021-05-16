@@ -86,14 +86,3 @@
     font-size: 30px;
     border: 1px dashed rgba(0, 0, 0, 0.356);
 }
-
-#button-cadastrar {
-    margin-top: 30px;
-    border: 1px dashed rgba(0, 0, 0, 0.356);
-    padding: 10px;
-}
-
-#button-cadastrar a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.822) ;
-}

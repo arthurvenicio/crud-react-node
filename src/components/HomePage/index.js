@@ -13,7 +13,7 @@ const HomePage = () => {
    useEffect(() => {
     const params = {};
     if(search){
-        params.id = search;
+        params.name = search;
     }
     api.get("products", {params})
         .then((response) => {
@@ -25,7 +25,8 @@ const HomePage = () => {
     }, [search]);
 
     //if don't have product in db exec
-    if (!data) return (<div id="container"> 
+    if (!data || data == null) return (
+    <div id="container"> 
     <div className="title-box">
         <p>Itens disponíveis no estoque: </p>
     </div>
@@ -34,14 +35,10 @@ const HomePage = () => {
         <div id="alert-box">
             <p>Não existem produtos cadatrados!</p>
         </div>
-
-        <div id="button-cadastrar">
-            <a href="/create" >Cadastrar Produto</a>
-        </div>
        
     </div>
     
-    </div>);
+    </div>); 
 
     //have product in db exec
     return(
@@ -53,8 +50,9 @@ const HomePage = () => {
             
             <div className="box-homepage">
                {data.map(({name, description, price, img, id, quantity}, index) => (
-                <Elements id={id} index={index} name={name} description={description} price={price} quantity={quantity} img={img}/>
-            ))} 
+                <Elements id={id} index={index} name={name} 
+                description={description} price={price} quantity={quantity} 
+                img={img}/>))} 
             </div>
             
         </div>

@@ -2,16 +2,19 @@ import React from 'react';
 import { BiTrash, BiListCheck } from 'react-icons/bi';
 import { api } from '../../services/api';
 import { useHistory } from 'react-router-dom';
+import { useSearch } from '../../context/Search';
+
 
 import './style.css';
 
 const Elements = ({name, quantity, description, price, img, id, index}) => {
 
     const history = useHistory();
-
+    const { setSearch } = useSearch();
     function deleteProduct(){
         api.delete(`product/${id}`).then((response) => alert(response.data) )
         .catch((error) => console.error);
+        setSearch();
     }
 
     return(

@@ -5,7 +5,7 @@
     padding:0;
     box-sizing: border-box;
 }
-.top {
+#top {
 
     display: flex;
     justify-content: space-between;
@@ -18,34 +18,34 @@
     border-bottom: 2px solid rgb(0, 168, 89);
 }
 
-.logo {
+#logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
 }
 
-.user-Info {
+#user-Info {
     width: 200px;
     height: 70px;
     display: flex;
 }
 
-.userLog {
+#userLog {
     width: 100px;
     height: 60px;
     margin-top: 15px;
     margin-left: auto;
 }
 
-.userLog p{
+#userLog p{
     font-size:11px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     /*color:rgb(87, 87, 87);*/
     color: black;
 }
-.userLog span{
+#userLog span{
     font-size:11px;
 
     font-family: 'Roboto', sans-serif;
@@ -54,7 +54,7 @@
     /*color:rgb(87, 87, 87);*/
     color: black;
 }
-.userImg {
+#userImg {
 
     width: 50px;
     height: 50px;
@@ -62,7 +62,7 @@
     margin: 10px 15px 0 0;
 }
 
-.userImg img {
+#userImg img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
