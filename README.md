@@ -34,5 +34,5 @@ Esse foi um CRUD desenvolvido com React JS no front e Node Js com Express para o
 - Falta adicionar a responsividade para aparelhos mobile.
 - Há as paginas de login e cadastro porém não estão funcionando ainda! 
 
-- Link para o repositorio [BACK-END](https://github.com/arthurvenicio/crud-react-node-back)
+- Link para o repositorio [BACK-END](https://github.com/arthurvenicio/crud-react-node-back-end)
 
