@@ -14,7 +14,7 @@ const Elements = ({name, quantity, description, price, img, id, index}) => {
     function deleteProduct(){
         api.delete(`product/${id}`).then((response) => alert(response.data) )
         .catch((error) => console.error);
-        setSearch();
+        setSearch(null);
     }
 
     return(

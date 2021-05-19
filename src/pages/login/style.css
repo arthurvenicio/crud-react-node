@@ -10,9 +10,9 @@
     background: #F3E8EE;
 }
 
-.box-login {
-    width: 350px;
-    height: 350px;
+#box-login {
+    width: 400px;
+    height: 450px;
 
     border-bottom: 5px solid green;
     background: white;
@@ -25,11 +25,11 @@
     box-sizing: border-box;
 }
 
-.logo {
+#logo {
    width: 10px;
 }
 
-.logo img {
+#logo img {
     width: 150px;
     height: 50px;
 }
@@ -44,7 +44,7 @@
 }
 
 .forms-input input {
-    width: 220px;
+    width: 270px;
     border: 0;
     outline: none;
     border-bottom: 1px solid green;
@@ -92,4 +92,11 @@
     font-family: Roboto, sans-serif;
     font-weight: 200;
     font-size: 15px;
+}
+
+@media (max-width:400px) {
+    #box-login {
+        width: 100vw;
+        height: 100vh;
+    }
 }

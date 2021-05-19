@@ -86,3 +86,35 @@
     text-decoration: none;
     color: black;
 }
+
+#button-logout {
+    border: none;
+    background: none;
+}
+#button-logout:hover{
+    cursor: pointer;
+}
+
+@media (max-width:400px) {
+    #top{
+        width: 100vw;
+    }
+
+    #user-Info{
+        overflow: hidden;
+    }
+
+    #userLog{
+        overflow: hidden;
+    }
+    #search-p{
+        overflow: hidden;
+    }
+    #userImg {
+        overflow: hidden;
+    }
+    #userImg img{
+        overflow: hidden;
+    }
+
+}

@@ -10,9 +10,9 @@
     background: #F3E8EE;
 }
 
-.box-register {
-    width: 350px;
-    height: 350px;
+#box-register {
+    width: 400px;
+    height: 450px;
 
     border-bottom: 5px solid green;
     background: white;
@@ -24,11 +24,11 @@
     align-items: center;
 }
 
-.logo {
+#logo {
    width: 10px;
 }
 
-.logo img {
+#logo img {
     width: 150px;
     height: 50px;
 }
@@ -43,7 +43,7 @@
 }
 
 .forms-register input {
-    width: 220px;
+    width: 270px;
     border: 0;
     outline: none;
     border-bottom: 1px solid green;
@@ -53,8 +53,8 @@
     font-style: italic;
 }
 
-.input-pswwd {
-    margin-top: 15px;
+.input-pswd {
+    margin-top: 20px;
 }
 
 .button-register{
@@ -78,4 +78,11 @@
 
 .button-register button:hover{
     cursor: pointer;
+}
+
+@media (max-width:400px){
+    #box-register{
+        width: 100vw;
+        height: 100vh;
+    }
 }

@@ -14,7 +14,7 @@ export const SearchBar = () => {
             value={search}
             onChange={(ev) =>{
                 setSearch(ev.target.value)
-               // console.log(search);
+            //    console.log(search);
             }}
             ></input>  
         </div>

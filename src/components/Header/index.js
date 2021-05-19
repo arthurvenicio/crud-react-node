@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { authConfig } from '../../auth/config';
 import { SearchBar } from '../SearchBar';
 
 import './style.css';
@@ -10,6 +11,10 @@ const Header = () => {
     const hour = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds(); 
+
+    const userLogout = () => {
+        authConfig.auth().signOut();
+    }
 
     return(
         <div id="top">
@@ -31,6 +36,7 @@ const Header = () => {
                 <div id="userLog">
                     <p>Administrador</p>
                     <p>{`${hour}:${minutes}:${seconds}`}</p>
+                    <button id="button-logout" onClick={userLogout}>Deslogar</button>
                 </div>
                 <div id="userImg">
 
